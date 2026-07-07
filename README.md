@@ -25,7 +25,7 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 5. **Visualization — grafica.R**
    Integrates all filtered outputs (completeness, assembly size, CDS count, BGC percentage, gene patterns) into a single comparative figure.
 
-> Detailed step-by-step commands for each stage are documented in **aun debo agregar el link ⚠️** .
+> Detailed step-by-step commands for each stage are documented in **aun debo agregar el link | falta renderizar y corregir la guía ⚠️** .
 
 
 ## Repository structure 🌳
@@ -47,6 +47,8 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 ## Cluster repository structure 💻
 
 
+
+
 ## Requirements / Dependencies 📦 
 
 ### Software
@@ -57,6 +59,8 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 | CheckM  | v1.2.2 | Genome quality assessment (completeness, contamination, assembly size)
 | Prokka  | v1.14.6 | Genome annotation, CDS count
 | antiSMASH  | v7.1.0 | Biosynthetic gene cluster (BGC) detection 
+
+## Cluster dependencies 
 
 
 
