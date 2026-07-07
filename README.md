@@ -6,3 +6,6 @@ Building on the comparative framework introduced by Volland et al. (2022), this 
 
 
 README  in progress ...
+<p align="center">
+  <img src="https://github.com/ecoevolab/thiotrichales_genomics/blob/main/cartoon.gif" width="300"/>
+</p>
