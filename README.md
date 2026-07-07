@@ -60,7 +60,7 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 | Prokka  | v1.14.6 | Genome annotation, CDS count
 | antiSMASH  | v7.1.0 | Biosynthetic gene cluster (BGC) detection 
 
-## Cluster dependencies 
+## Cluster requirements / dependencies 📦 
 
 
 
