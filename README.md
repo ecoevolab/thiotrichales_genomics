@@ -23,6 +23,7 @@ Cellular complexity is assessed via genome size, CDS count, and cell division/el
 ```
 
 
+
 ## Requirements / Dependencies 📦 
 
 ### Software
@@ -35,9 +36,12 @@ Cellular complexity is assessed via genome size, CDS count, and cell division/el
 | antiSMASH  | v7.1.0 | Biosynthetic gene cluster (BGC) detection 
 
 
+
 ## References 📚
 
 - Volland, J. M., Gonzalez-Rizzo, S., Gros, O., Tyml, T., Ivanova, N., Schulz, F., ... & Girguis, P. R. (2022). A centimeter-long bacterium with DNA contained in metabolically active, membrane-bound organelles. *Science*, 376(6600), 1453-1458. https://doi.org/10.1126/science.abb3634
+
+
 
 
 > 🚧 **Work in progress** — this README is still under construction.
