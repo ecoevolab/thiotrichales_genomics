@@ -44,6 +44,7 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 │   └── patterns.py                 # Extracts cell division/elongation gene patterns
 ```
 
+## Cluster repository structure 💻
 
 
 ## Requirements / Dependencies 📦 
