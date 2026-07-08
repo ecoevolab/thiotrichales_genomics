@@ -11,18 +11,18 @@ Cellular complexity is assessed via genome size, CDS count, and cell division/el
 The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a standardized table used to reproduce comparative figures.
 
 1. **Quality control — CheckM**
-   Assesses genome completeness and contamination. Genomes are filtered using the thresholds: Completeness > 50%, Contamination < 30%. Also provides assembly size (Mbp).
+   Assesses genome completeness and contamination.
+   
+3. **Genome annotation — Prokka**
+   Annotates coding sequences (CDS), tRNAs, and rRNAs. 
 
-2. **Genome annotation — Prokka**
-   Annotates coding sequences (CDS), tRNAs, and rRNAs. CDS counts are extracted and normalized (x1000) for filtered genomes.
+4. **BGC detection — antiSMASH**
+   Identifies biosynthetic gene clusters (BGCs).
+   
+6. **Ortholog and domain search — eggNOG + HMMER**
+   Identifies orthologous gene groups and protein domain patterns.
 
-3. **BGC detection — antiSMASH**
-   Identifies biosynthetic gene clusters (BGCs) and calculates the genomic percentage occupied by secondary metabolite clusters (`bgc_extractor.py`).
-
-4. **Ortholog and domain search — eggNOG + HMMER**
-   Identifies orthologous gene groups and protein domain patterns associated with cell division (`ftsQ`, `ftsA`) and elongation (`mreD`, `mrdA`, `rodZ`) genes (`patterns.py`).
-
-5. **Visualization — grafica.R**
+7. **Visualization — grafica.R**
    Integrates all filtered outputs (completeness, assembly size, CDS count, BGC percentage, gene patterns) into a single comparative figure.
 
 > Detailed step-by-step commands for each stage are documented in **aun debo agregar el link | falta renderizar y corregir la guía ⚠️** .
