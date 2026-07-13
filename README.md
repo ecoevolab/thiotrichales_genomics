@@ -49,8 +49,8 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 ├── mreyes
 │   └── data
 │     └── thiotrichales
-│        └── genomas   # bacteria genomes
-│        └── proteinas    # bacteria protein sequences    
+│        └── genomas                # bacteria genomes
+│        └── proteinas              # bacteria protein sequences    
 │   └── exp
 │     └── thiotrichales
 │        └── grafica_png
@@ -63,17 +63,17 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 │            ├── antismash.sh                   # Script to run antiSMASH
 │            └── antismash_missing.sh           # Same script, but in this case used to process the missing genomes that weren't annotated.
 │        └── bgc_extraccion
-│            └── bgc_extractor.py            # Extracts BGC genomic extent from antiSMASH output
+│            └── bgc_extractor.py               # Extracts BGC genomic extent from antiSMASH output
 │        └── checkm
-│            └── checkm.sh                  # Script to run CheckM
+│            └── checkm.sh                      # Script to run CheckM
 │        └── grafica
-│            ├── grafica.R                   # Main script to reproduce comparative figures
-│            └── grafica_con_comentarios.R   # Same script, annotated for reference
+│            ├── grafica.R                      # Main script to reproduce comparative figures
+│            └── grafica_con_comentarios.R      # Same script, annotated for reference
 │        └── gtdbtk
 │        └── patterns_extraccion
-│            └── patterns.py                 # Extracts cell division/elongation gene patterns
+│            └── patterns.py                    # Extracts cell division/elongation gene patterns
 │        └── prokka
-│            └── prokka.sh                 # Script to run Prokka
+│            └── prokka.sh                      # Script to run Prokka
 │        └── orthofinder
 │            └── orthofinder.sh                 # Script to run OrthoFinder
 
