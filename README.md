@@ -48,9 +48,6 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 
 
 
-
-## Requirements / Dependencies 📦 
-
 ### Software
 
 | Tool | Version | Use |
