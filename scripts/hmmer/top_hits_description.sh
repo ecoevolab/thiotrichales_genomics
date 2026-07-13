@@ -1,6 +1,32 @@
 #!/bin/bash
-
-# uso: ./top_hits.sh resultados_hmmer.txt "producto_esperado" salida.tsv
+# ------------------------------------------------------------------------------
+# top_hits.sh
+# ------------------------------------------------------------------------------
+# Objetivo:
+#   Procesa la salida tblout (opcion) de hmmsearch (HMMER) para un gen especifico y
+#   obtiene el mejor hit (top hit) por genoma, es decir, se queda con una
+#   sola linea por genoma (la de menor E-value), aun cuando el archivo de
+#   entrada tenga multiples hits por genoma.
+#
+#   Ademas, compara la descripcion del producto reportada por HMMER contra
+#   un producto esperado (definido a partir de literatura, no de la
+#   anotacion automatica del genoma), marcando cada hit como TRUE/FALSE
+#   segun si coincide, de forma parcial e insensible a mayusculas
+#   (ej. "D-alanine--D-alanine ligase B" cuenta como match de
+#   "D-alanine--D-alanine ligase").
+#
+# Entrada:
+#   Un archivo tblout de hmmsearch para un gen (se corre uno a la vez,
+#   no itera sobre varios genes).
+#
+# Salida:
+#   Tabla en formato tsv con columnas:
+#   genome_locustag, genome_id, evalue, exp_dom, description, product_match
+#
+# Uso: ./top_hits.sh resultados_hmmer.txt "producto_esperado" salida.tsv
+#
+# Ejemplo:
+#   ./top_hits.sh resultados_ddl_tblout.txt "D-alanine--D-alanine ligase" salida_ddl.tsv
 
 INPUT="$1"   #resultados provenientes de hmmer
 PRODUCTO_ESPERADO="$2" # el producto proteico que se espera obtener ejemplo "D-alanine--D-alanine ligase" 
