@@ -88,6 +88,7 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 | CheckM  | v1.2.2 | Genome quality assessment (completeness, contamination, assembly size)
 | Prokka  | v1.14.6 | Genome annotation, CDS count
 | antiSMASH  | v7.1.0 | Biosynthetic gene cluster (BGC) detection 
+| Hmmer | v3.3.1 | Aligments of sequences
 
 
 
