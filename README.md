@@ -89,6 +89,7 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 | Prokka  | v1.14.6 | Genome annotation, CDS count
 | antiSMASH  | v7.1.0 | Biosynthetic gene cluster (BGC) detection 
 | HMMER | v3.3.1 | Aligments of sequences
+| HMMER | v3.4 | Aligments of sequences
 | EggNOG | v4.5.1 | Source of Orthologous Group (OG) profiles
 | EggNOG | v5.0 | Source of Orthologous Group (OG) profiles
 
