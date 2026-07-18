@@ -51,10 +51,10 @@ tabla_plot <- tabla_completa %>%
 p <- ggplot(tabla_plot, aes(x = gen, y = genome_id, fill = categoria)) +
   geom_tile(color = "white", linewidth = 0.2) +
   scale_fill_manual(values = c(
-    "ausente"   = "grey90",
-    "1 copia"   = "steelblue3",
-    "2 copias"  = "sienna1",
-    "3+ copias" = "red2"
+    "absent"   = "grey90",
+    "1 copy"   = "steelblue3",
+    "2 copies"  = "sienna1",
+    "3+ copies" = "red2"
   )) +
   theme_minimal() +
   theme(
