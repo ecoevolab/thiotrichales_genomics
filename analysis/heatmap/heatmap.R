@@ -62,8 +62,8 @@ p <- ggplot(tabla_plot, aes(x = gen, y = genome_id, fill = categoria)) +
     axis.text.y = element_text(size = 7)
   ) +
   labs(
-    x = "Gene", y = "Genome ID", fill = "Copy number",
-    title = "preeliminar - Número de copias de genes"
+    x = "Gene", y = "Genome ID", fill = "number of copies",
+    title = "Preliminary - Number of gene copies"
   )
 p
 
