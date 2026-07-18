@@ -39,12 +39,12 @@ write_csv(tabla_resumen, "resumen_copias_por_gen.csv")
 tabla_plot <- tabla_completa %>%
   mutate(
     categoria = case_when(
-      n_copias == 0 ~ "ausente",
-      n_copias == 1 ~ "1 copia",
-      n_copias == 2 ~ "2 copias",
-      n_copias >= 3 ~ "3+ copias"
+      n_copias == 0 ~ "absent",
+      n_copias == 1 ~ "1 copy",
+      n_copias == 2 ~ "2 copies",
+      n_copias >= 3 ~ "3+ copies"
     ),
-    categoria = factor(categoria, levels = c("ausente", "1 copia", "2 copias", "3+ copias")),
+    categoria = factor(categoria, levels = c("absent", "1 copy", "2 copies", "3+ copies")),
     gen = factor(gen, levels = genes)
   )
 
