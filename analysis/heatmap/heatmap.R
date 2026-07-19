@@ -7,10 +7,13 @@ base_dir <- "/Users/monicareyes/Desktop/aligments"
 genes <- c("murG", "murC", "murB", "ddl", "ftsQ","ftsA", 
            "ftsZ", "lpxC", "mreB", "mreC", "mreD", "mrdA", "rodA", "mltB", "rlpA", "rodZ")
 
+# Opcional, se puede pasar los ID de los genes que se quieren directamente en la variable genome_ID
+# En este caso se tomaron los GFFs por que se intentaban cruzar las coordenadas, pero se descarto esa ópcion 
+# Y se transfirio esa idea a un nuevo script
 # Carpeta donde estan los GFFs individuales
 gff_dir <- "/Users/monicareyes/Desktop/gff_procesados"
 
-# Lista de ID de los genomas
+# Lista de ID de los genomas, puede ser reemplazado por un archivo con los ID directamente
 genoma_ids <- list.files(gff_dir, pattern = "_limpio\\.gff$") %>%
   str_remove("_limpio\\.gff$") # remueve el .gff de los gff individuales
 
@@ -30,6 +33,7 @@ tabla_completa <- conteos %>%
   complete(genome_id = genoma_ids, gen = genes, fill = list(n_copias = 0))
 
 # resumen en tabla de los genes y su relacion con los genomas - para verificar a mano
+# o para un uso posterior
 tabla_resumen <- tabla_completa %>%
   pivot_wider(names_from = gen, values_from = n_copias)
 
