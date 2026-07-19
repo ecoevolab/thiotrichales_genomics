@@ -30,18 +30,33 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 
 ## Repository structure 🌳
 
+
 ```
+thiotrichales_genomics/
 ├── README.md
-├── index.html                      # GitHub Pages site
-├── bgc_extraccion/
-│   └── bgc_extractor.py            # Extracts BGC genomic extent from antiSMASH output
-├── Genome_filtering_guide/
-│   └── Guia_grafica.ipynb          # Step-by-step genome filtering pipeline (CheckM, Prokka, antiSMASH, eggNOG)
-├── grafica/
-│   ├── grafica.R                   # Main script to reproduce comparative figures
-│   └── grafica_con_comentarios.R   # Same script, annotated for reference
-├── patterns_extraccion/
-│   └── patterns.py                 # Extracts cell division/elongation gene patterns
+├── LICENSE
+├── .gitignore
+├── thiotrichales_genomics.Rproj
+
+├── scripts/                          # Cluster job scripts for each bioinformatics tool
+│   ├── checkm/                       # Genome quality assessment (completeness, contamination)
+│   ├── prokka/                       # Genome annotation (CDS, tRNA, rRNA)
+│   ├── gtdbtk/                       # Taxonomic classification
+│   ├── antismash/                    # Biosynthetic gene cluster (BGC) detection
+│   └── hmmer/                        # Protein domain search
+
+├── analysis/                         # Data processing, extraction, and visualization
+│   ├── bgc_extraccion/               # Extracts BGC genomic extent from antiSMASH output
+│   ├── patterns_extraccion/          # Extracts cell division/elongation gene patterns
+│   ├── grafica/                      # Scripts to reproduce comparative figures
+│   └── heatmap/                      # Script to create heatmap of preliminary gene patterns
+
+├── figures/                          # Output plots and images
+├── cartoon.gif                       # Illustration used in the README
+├── preliminary_heatmap.png           # Heatmap of preliminary gene patterns
+
+└── docs/                             # Documentation and guides
+    └── Genome_filtering_guide/       # Step-by-step genome filtering pipeline (notebook)
 ```
 
 ## Cluster repository structure 💻
