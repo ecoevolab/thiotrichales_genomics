@@ -1,3 +1,4 @@
+rm(list = ls()) #limpiar el enviroment
 library(tidyverse)
 
 # Directorio donde estan las subcarpetas por gen - de los alineamientos
@@ -10,12 +11,14 @@ genes <- c("murG", "murC", "murB", "ddl", "ftsQ","ftsA",
 # Opcional, se puede pasar los ID de los genes que se quieren directamente en la variable genome_ID
 # En este caso se tomaron los GFFs por que se intentaban cruzar las coordenadas, pero se descarto esa ópcion 
 # Y se transfirio esa idea a un nuevo script
-# Carpeta donde estan los GFFs individuales
-gff_dir <- "/Users/monicareyes/Desktop/gff_procesados"
 
-# Lista de ID de los genomas, puede ser reemplazado por un archivo con los ID directamente
-genoma_ids <- list.files(gff_dir, pattern = "_limpio\\.gff$") %>%
-  str_remove("_limpio\\.gff$") # remueve el .gff de los gff individuales
+# Archivo con los IDs de los genomas de interes 
+ids_file <- "/Users/monicareyes/Desktop/ID.txt"
+
+# Lista de ID de los genomas - el orden de los genomas es directamente el orden como estan los ID en el archivo 
+genoma_ids <- read_lines(ids_file) %>%
+  str_trim() %>%
+  discard(~ .x == "")
 
 # Primero se lee y  cuentan las copias de cada gen por cada genoma y se almacenan 
 leer_conteo <- function(gen) {
@@ -30,6 +33,7 @@ conteos <- map_dfr(genes, leer_conteo)
 
 # los genomas sin ningun hit para ese gen reciben el valor de 0
 tabla_completa <- conteos %>%
+  filter(genome_id %in% genoma_ids) %>%
   complete(genome_id = genoma_ids, gen = genes, fill = list(n_copias = 0))
 
 # resumen en tabla de los genes y su relacion con los genomas - para verificar a mano
@@ -49,7 +53,10 @@ tabla_plot <- tabla_completa %>%
       n_copias >= 3 ~ "3+ copies"
     ),
     categoria = factor(categoria, levels = c("absent", "1 copy", "2 copies", "3+ copies")),
-    gen = factor(gen, levels = genes)
+    gen = factor(gen, levels = genes),
+    # orden del eje Y segun el orden del archivo
+    #(rev() para que el primero del valor del archivo quede arriba)
+    genome_id = factor(genome_id, levels = rev(genoma_ids))
   )
 
 p <- ggplot(tabla_plot, aes(x = gen, y = genome_id, fill = categoria)) +
