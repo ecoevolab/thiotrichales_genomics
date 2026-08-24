@@ -1,0 +1,13 @@
+---
+title: "Summary table - Thiotrichales"
+author: Mónica Reyes Ramírez
+date: "`r Sys.Date()`"
+output: html_notebook
+---
+
+| ID | Organism name (putative) | Ecosystem | Habitat | Sequencing Strategy| Study name
+|:---|:---|:---|:---|:---|:----|
+| 2894041767 | Thiothrix sp. AG-917-F21 | Atlantic Ocean [31.07, -64.17], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890541225 | Thiothrix sp. AG-390-O20 | Atlantic Ocean [36.2, -53.31], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2894040609 | Thiothrix sp. AG-447-N20 | Atlantic Ocean [-34.98, 16.02], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890631485 | Thiothrix sp. AG-918-N08 | Atlantic Ocean [31.07, -64.17], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
