@@ -1,0 +1,81 @@
+---
+title: "Summary table - Thiotrichales"
+author: Mónica Reyes Ramírez
+date: "`r Sys.Date()`"
+output: html_notebook
+---
+
+| Genome ID | Organism name (putative) | Ubication | Ecosystem type | Sequencing Strategy| Study name
+|:----|:----|:----|:----|:----|:----|
+| 2894041767 | Thiothrix sp. AG-917-F21 | Atlantic Ocean [31.07, -64.17], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890541225 | Thiothrix sp. AG-390-O20 | Atlantic Ocean [36.2, -53.31], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890630416 | Thiothrix sp. AG-917-N04 | Atlantic Ocean [31.07, -64.17], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2894040609 | Thiothrix sp. AG-447-N20 | Atlantic Ocean [-34.98, 16.02], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890631485 | Thiothrix sp. AG-918-N08 | Atlantic Ocean [31.07, -64.17], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2890616370 | Thiothrix sp. AH-287-I11| Pacific Ocean [-3.04, -166.01], pelagic zone | Marine water | Whole Genome Sequencing | Charting the complexity of the marine microbiome through single cell genomics
+| 2772190905 | Beggiatoa sp. S19_FULL_No.1_0.9_70 | Without information | Without information | Metagenome-Assembled Genome | **Hydrothermal Fe-rich Mat Reference Genomes**
+| 2711768587 | Achromatium sp. Cell3 | Lake Stechlin, Germany |Freshwater | Whole Genome Sequencing |Hand-picked under binocular Achromatium cells from sediments of Lake Stechlin, Neuglobsow, Germany
+| 8074213743 | Achromatium sp. WMS2 | USA: Warm Mineral Springs, FL [27.06, -82,26] | Marine sediment | Whole Genome Sequencing | Achromatium Genome sequencing
+| 2772190906 | Beggiatoa sp. 664_BS3_FULL_No.1_1.8_98 | Without information | Without information | Metagenome-Assembled Genome | Hydrothermal Fe-rich Mat Reference Genomes
+| 2721755989 | Beggiatoa sp. 664_BS3_FULL_No.1_1.8_98 | Lake Stechlin, Germany |  Freshwater | Whole Genome | Hand-picked under binocular Achromatium cells from sediments of Lake Stechlin, Neuglobsow, Germany
+| 2772190729 | Candidatus Marithrix sp. Canyon 246 | Gulf of Mexico, Green Canyon, Lease block 246 | Cold seeps, marine | Whole Genome Sequencing | Candidatus Marithrix sp. Canyon 246
+| 2806310698 | Candidatus Marithrix sp. Canyon 246 segment 3 | Gulf of Mexico, Green Canyon 246 | Cold seeps, marine | Whole Genome Sequencing | Marithrix sp. single filament draft genome
+| 2711768588 | Achromatium sp. Cell7 | Lake Stechlin, Germany | Freshwater | Whole Genome Sequencing | Freshwater microbial communities from Lake Stechlin, Germany during a mid-water methane oversaturation
+| 2710724217 | Achromatium sp. Cell12 | Lake Stechlin, Germany | Freshwater | Whole Genome Sequencing | Hand-picked under binocular Achromatium cells from sediments of Lake Stechlin, Neuglobsow, Germany 
+| 2767802434 | unclassified Thiotrichaceae bin E4_27 | Without information | Without information | Metagenome-Assembled Genome | Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2835562463 | Thiotricheae bacterium A1422 | Without information | Without information | Metagenome-Assembled Genome | Tubeworm host-associated microbial communities from Mississippi Canyon, USA
+| 2835554630 | Thiotricheae bacterium A1423 | Without information | Without information | Metagenome-Assembled Genome | Tubeworm host-associated microbial communities from Mississippi Canyon, USA
+| 8002131595 | Candidatus Thiothrix anitrata A52 | Without information | Groundwater, freshwater | Whole Genome Sequencing | Thiothrix sp. Genome sequencing
+| 2684622566 | Achromatium sp. WMS3 | **USA: Warm Mineral Springs, FL** | Thermal springs | Whole Genome Sequencing | Achromatium Genome sequencing
+| 2556921650 | Thiothrix lacustris DSM 21227 | Russia, Northern Caucasus, Kabardino-Balkaria, Blue lake system | Lentic, freshwater| Whole Genome Sequencing | Genomic Encyclopedia of Type Strains, Phase I: the one thousand microbial genomes (KMG-I) project
+| 2828901765 | Thiothrix sp. DeMMO2_1 | Without information | Without information | Metagenome-Assembled Genome | **Terrestrial subsurface fluid microbial community from Deep Mine Microbial Observatory in Lead, South Dakota, USA**
+| 2619618925 | Thiothrix sp. EBPR_Bin_364 | Without information | Without information | Metagenome-Assembled Genome | **Enhanced biological phosphorus removal bioreactor microbial communities from the University of Queensland, Australia**
+| 2710724216 | Thiothrix sp. EBPR_Bin_364 | Lake Stechlin, Germany | Freshwater | Whole Genome Sequencing | Hand-picked under binocular Achromatium cells from sediments of Lake Stechlin, Neuglobsow, Germany
+| 2514752027 | Thiothrix sp. AAV1 | Host, Wastewater treatment plant, Denmark | wastewater | Whole Genome Sequencing | Danish EBPR WWTP microbial reference genomes
+| 2835551090 | Thiotricheae bacterium A1464 | ississippi Canyon, USA | Without information | Metagenome-Assembled Genome | Tubeworm host-associated microbial communities from Mississippi Canyon, USA
+| 2767802425 | unclassified Thiotrichaceae bin E1_76 | Without information | Without information | Metagenome-Assembled Genome | Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2599185268 | Thiothrix caldifontis DSM 21228 | Russia, Northern Caucasus, Petushok spring | Groundwater, freshwater | Whole Genome Sequencing | Genomic Encyclopedia of Type Strains, Phase I: the one thousand microbial genomes (KMG-I) project
+| 2835558653 | Thiotricheae bacterium A1462 | Mississippi Canyon, USA | Without information | Metagenome-Assembled Genome | Tubeworm host-associated microbial communities from Mississippi Canyon, USA
+| 3001836915 | Thiothrix subterranea Ku-5 |underground horizons of a flooded mine in Russia | Terrestrial, mine | Whole Genome Sequencing| Thiothrix Genome sequencing
+| 2767802433 | unclassified Thiotrichaceae bin E4_68 | Without information | Without information | Metagenome-Assembled Genome| Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2585428147 |Thiothrix eikelboomii ATCC 49788 | Aliquippa, PA, USA | Wastewater | Whole Genome Sequencing | Genomic Encyclopedia of Archaeal and Bacterial Type Strains, Phase II (KMG-II): from individual species to whole genera
+| 2828749676 |	unclassified Thiotrichaceae bin E2_68 | Without information | Without information | Metagenome-Assembled Genome | Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2508501047 | Beggiatoa alba B18LD | Louisiana, USA | Terrestrial, paddy field/soil | Whole Genome Sequencing | CSP_777009
+| 2788500402 | Beggiatoa leptomitoformis D-401 | Russia: Yaroslavl region | Groundwater, deep subsurface | Whole Genome Sequencing | Beggiatoa leptomitiformis D-401 genome sequencing
+| 2654588010 | Beggiatoa leptomitoformis D-402 | Without information | Without information | Whole Genome Sequencing | Beggiatoa leptomitiformis D-402 genome sequencing
+| 8002135289 | Thiothrix lacustris AS | Russia: White Sea | Marine water | Whole Genome Sequencing | Thiothrix sp. Genome sequencing
+| 8066494198 | Thiothrix fructosivorans ATCC 49748 | Without information | Sludge, Wastewater | Whole Genome Sequencing | Thiothrix fructosivorans ATCC 49748 genome sequencing
+| 8056884285 | Thiothrix winogradskyi CT3 | Without information | Without information | Whole Genome Sequencing | Thiothrix sp. Genome sequencing
+| 8125999560 | Venteria ishoeyi HSG18 | Chile: Bahia de Concepcion | 	Marine sediments from a bay | Whole Genome Sequencing | Venteria ishoeyi HSG18 genome sequencing
+| 2802428810 | Cocleimonas flava DSM 24830 |  Without information | Host-associated, Mollusca | Whole Genome Sequencing | Genomic Encyclopedia of Type Strains, Phase IV (KMG-IV): sequencing the most valuable type-strain genomes for metagenomic binning, comparative biology and taxonomic classification
+| 2506520049 | Thiothrix nivea JP2, DSM 52058 | John Pennycamp State Park, Key Largo, FL, USA | Aquatic, Fresh water | Whole Genome Sequencing | A Genomic Encyclopedia of Bacteria and Archaea (GEBA)
+| 2882495133 | Leucothrix arctica IMCC9719 | **Svalbard: coast of Kongsfjorden, Arctic** | Marine water | Whole Genome Sequencing | Leucothrix arctica IMCC9719 genome sequencing
+| 2502790011 | Beggiatoa sp. Orange Guaymas | **Guaymas Basin hydrothermal vent site, Mexico** | Hydrothermal vents, marine water | Whole Genome Sequencing | Beggiatoa sp. Orange Guaymas
+| 2619619276 | Thioploca ingrica Lake Okotanpe | Japan: Hokkaido, Lake Okotanpe | Freshwater | Whole Genome Sequencing | Thioploca ingrica Genome sequencing
+| 2889727904 | Leucothrix pacifica JCM 18388 | Pacific Ocean: South Pacific Gyre | Marine water | Whole Genome Sequencing | Genome sequencing of Leucothrix pacifica JCM 18388
+| 2517093012 | Leucothrix mucor DSM 2157 | 	Friday Harbor, WA, USA | Marine water | Whole Genome Sequencing | Continuation of the Genomic Encyclopedia of Bacteria and Archaea pilot project (GEBA)
+| 2236661048 | Thiomargarita sp. Thio36 (unscreened) | 	Without information | Without information | Whole Genome Sequencing | Thiomargarita single cell
+| 8071263300 | Thiotrichales bacterium HS_08 | 	Without information | Without information | Whole Genome Sequencing | Thiotrichales bacterium HS_08 genome sequencing
+| 640963011 | Beggiatoa sp. PS | harbor of Eckernford, Germany | **Aquatic, Hydrothermal vent, Marine, Sediment** | Whole Genome Sequencing | Beggiatoa sp. PS
+| 2600255314 | 	Thiomargarita nelsonii bud S10 | Without information | Without information | Metagenome-Assembled Genome | Hydrate Ridge Gastropod Epibiont Candidatus Thiomargarita nelsonii HR-S10 and Its Epibiont Community
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
