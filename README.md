@@ -27,6 +27,8 @@ The pipeline processes raw *Thiotrichales* genome assemblies (`.fasta`) into a s
 
 > Detailed step-by-step commands for each stage are documented in **aun debo agregar el link | falta renderizar y corregir la guía ⚠️** .
 
+**Summary table (additional information about Thiotrichales): https://ecoevolab.github.io/thiotrichales_genomics/analysis/summary_table/summary_table.nb.html**
+
 
 ## Repository structure 🌳
 
