@@ -58,6 +58,13 @@ output: html_notebook
 | 8071263300 | Thiotrichales bacterium HS_08 | 	Without information | Without information | Whole Genome Sequencing | Thiotrichales bacterium HS_08 genome sequencing
 | 640963011 | Beggiatoa sp. PS | harbor of Eckernford, Germany | **Aquatic, Hydrothermal vent, Marine, Sediment** | Whole Genome Sequencing | Beggiatoa sp. PS
 | 2600255314 | 	Thiomargarita nelsonii bud S10 | Without information | Without information | Metagenome-Assembled Genome | Hydrate Ridge Gastropod Epibiont Candidatus Thiomargarita nelsonii HR-S10 and Its Epibiont Community
+| 2788499801 | 	Candidatus Thiomargarita nelsonii Bin E3_30 | Without information | Without information | Metagenome-Assembled Genome | Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2772190875 | 	Candidatus Thiomargarita nelsonii Bin E5_22_5 | Without information | Without information | Metagenome-Assembled Genome | Investigating the Microbiome of Thiomargarita & Thiopilula
+| 2772190875 | 	Cand. Thiomargarita magnifica 71 v.2 | Guadeloupe, Lesser Antilles. | Marine water | Metagenome-Assembled Genome | Thiomargarita filaments from Guadeloupe
+| 2956002012 | 	Cand. Thiomargarita magnifica 72 v.2 | Guadeloupe, Lesser Antilles. | Marine water | Metagenome-Assembled Genome | Thiomargarita filaments from Guadeloupe
+| 2955963837 | 	Cand. Thiomargarita magnifica 75 v.2 | Guadeloupe, Lesser Antilles. | Marine water | Metagenome-Assembled Genome | Thiomargarita filaments from Guadeloupe
+| 2955976453 | 	Cand. Thiomargarita magnifica 74 v.2 | Guadeloupe, Lesser Antilles. | Marine water | Metagenome-Assembled Genome | Thiomargarita filaments from Guadeloupe
+| 2955976453 | 	Cand. Thiomargarita magnifica 73 v.2 | Guadeloupe, Lesser Antilles. | Marine water | Metagenome-Assembled Genome | Thiomargarita filaments from Guadeloupe
 
 
 
