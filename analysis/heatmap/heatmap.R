@@ -78,3 +78,5 @@ p <- ggplot(tabla_plot, aes(x = gen, y = genome_id, fill = categoria)) +
   )
 p
 
+# Ruta para guardar la tabla 
+#write_csv(tabla_resumen, "/Users/monicareyes/Desktop/resumen_copias_por_gen.csv")
