@@ -14,8 +14,8 @@ echo "===== Starting OrthoFinder Thiotrichales ====="
 eval "$(conda shell.bash hook)"
 conda activate orthofinder
 
-INPUT_DIR="/mnt/data/sur/users/mreyes/data/thiotricales/results/proteinas"
-OUTPUT_DIR="/mnt/data/sur/users/mreyes/data/thiotricales/results/orthofinder"
+INPUT_DIR="/mnt/data/sur/users/mreyes/data/thiotrichales/proteinas"
+OUTPUT_DIR="/mnt/data/sur/users/mreyes/exp/thiotrichales/results/orthofinder_${SLURM_JOB_ID}"
 
 orthofinder \
     -f "$INPUT_DIR" \
