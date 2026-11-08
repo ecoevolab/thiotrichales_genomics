@@ -4,14 +4,14 @@ library(gggenes)         # is a ggplot2 extension for drawing gene arrow maps.
 
 
 
-gff_dir    <- "/Users/monicareyes/Desktop/gff_procesados"  # carpeta con los gff de los genomas
+gff_dir <- "/Users/monicareyes/Desktop/gff_procesados"  # carpeta con los gff de los genomas
 csv_coords <- "coordenadas_genes_focales.csv"              # coordenadas genomicas de los genes de interes 
-orden_txt  <- "/Users/monicareyes/Desktop/ID.txt"          # orden de las filas
+orden_txt <- "/Users/monicareyes/Desktop/ID.txt"          # orden de las filas
 
-ventana    <- 10000     # pares de bases a los lados de cada ancla
-anclas     <- c("ddl", "mreB", "rodZ")   # anclas 
-listones   <- TRUE      # bandas que unen al mismo gen en las diferentes filas
-escala_pb  <- 3000      # largo de la barra de escala 
+ventana <- 10000     # pares de bases a los lados de cada ancla
+anclas <- c("ddl", "mreB", "rodZ")   # anclas 
+listones <- TRUE      # bandas que unen al mismo gen en las diferentes filas
+escala_pb <- 3000      # largo de la barra de escala 
 
 # genes que queremos colorear/resaltar, todos los demás que no esten en la lista van a ser grises
 genes <- c("murG", "murC", "murB", "ddl", "ftsZ", "ftsQ", "ftsA", "lpxC", "mreB", "mreC",
