@@ -2,11 +2,11 @@ rm(list = ls())
 library(tidyverse)       
 library(gggenes)         # is a ggplot2 extension for drawing gene arrow maps.
 
+setwd("/Users/monicareyes/Desktop/")
 
-
-gff_dir <- "/Users/monicareyes/Desktop/gff_procesados"  # carpeta con los gff de los genomas
+gff_dir <- "gff_procesados"  # carpeta con los gff de los genomas
 csv_coords <- "coordenadas_genes_focales.csv"              # coordenadas genomicas de los genes de interes 
-orden_txt <- "/Users/monicareyes/Desktop/ID.txt"          # orden de las filas
+orden_txt <- "ID.txt"          # orden de las filas
 
 ventana <- 10000     # pares de bases a los lados de cada ancla
 anclas <- c("ddl", "mreB", "rodZ")   # anclas 
