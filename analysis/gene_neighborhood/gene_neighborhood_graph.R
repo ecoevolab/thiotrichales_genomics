@@ -9,7 +9,7 @@ csv_coords <- "coordenadas_genes_focales.csv"              # coordenadas genomic
 orden_txt <- "ID.txt"          # orden de las filas
 
 ventana <- 10000     # pares de bases a los lados de cada ancla
-anclas <- c("ddl", "mreB", "rodZ")   # anclas 
+anclas <- c("murC", "mreB", "rodZ")   # anclas 
 listones <- TRUE      # bandas que unen al mismo gen en las diferentes filas
 escala_pb <- 3000      # largo de la barra de escala 
 
@@ -166,7 +166,7 @@ paneles <- map(anclas, dibujar) %>% set_names(anclas)
 iwalk(paneles, ~ ggsave(paste0("vecindario_", .y, ".pdf"), .x,
                         width = 12, height = max(5, 0.25 * nrow(orden) + 2)))
 
-paneles$ddl    
+paneles$murC   
 paneles$mreB
 paneles$rodZ
 
@@ -184,3 +184,4 @@ tabla_vecindario <- function(gen_ancla) {
 
 tablas <- map_dfr(anclas, tabla_vecindario)
 write_csv(tablas, "vecindarios_detalle.csv")
+

@@ -2,6 +2,8 @@
 rm(list = ls())
 library(readr)
 library(dplyr)
+library(ggplot2)
+library(tidyr)
 
 #ruta
 OG <- read_tsv("/Users/monicareyes/Desktop/Orthogroups/Orthogroups.GeneCount.tsv")
@@ -42,7 +44,37 @@ write_tsv(filtrado_80_per, "OG_80_percent_in_genomes.tsv")
 nrow(filtrado_80_per)  
 
 # Histograma para visualizar en cuantos genomas esta presente cada OG 
+# ruta del archivo de arriba
+OG_80 <- read_tsv("OG_80_percent_in_genomes.tsv")
 
+OG_freq <- OG_80 %>% 
+  mutate(n_genomes = rowSums(across(all_of(cols)) > 0)) %>% 
+  select(Orthogroup, n_genomes) %>% 
+  arrange(desc(n_genomes)) %>% 
+  mutate(Orthogroup = factor(Orthogroup, levels = Orthogroup))
 
+ggplot(OG_freq, aes(x = Orthogroup, y = n_genomes, fill = n_genomes)) +
+  geom_col() +
+  scale_fill_gradient(low = "lightblue", high = "darkblue", name = "Genomas") + #degradado de colores
+  scale_y_continuous(limits = c(0, 59), breaks = seq(0, 59, 5)) +
+  labs(x = "Orthogroup", y = "Número de genomas") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 4))
+
+# histograma para visualizar cuantos OG tiene cada genoma
+genoma_freq <- OG_80 %>% 
+  summarise(across(all_of(cols), ~ sum(.x > 0))) %>% 
+  pivot_longer(everything(), names_to = "genoma", values_to = "n_OG") %>% 
+  arrange(desc(n_OG)) %>% 
+  mutate(genoma = factor(genoma, levels = genoma))
+
+ggplot(genoma_freq, aes(x = genoma, y = n_OG, fill = n_OG)) +
+  geom_col() +
+  geom_hline(yintercept = nrow(OG_80), linetype = "dashed") +
+  scale_fill_gradient(low = "lightblue", high = "darkblue", name = "OG") + #degradado de colores
+  scale_y_continuous(limits = c(0, nrow(OG_80)), breaks = seq(0, nrow(OG_80), 25)) +
+  labs(x = "Genoma", y = paste0("Número de OG conservados (Max en ", nrow(OG_80), ")")) +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 8))
 
 
